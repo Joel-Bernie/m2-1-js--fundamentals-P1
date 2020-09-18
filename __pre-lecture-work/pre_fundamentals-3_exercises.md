@@ -7,14 +7,14 @@ _We will correct these exercises in class._
 ```js
 // Look at these expressions below and determine whether they evaluate to true or false
 
-1. true || false
-2. false && false
-3. 1 < 2 && 2 > 1
-4. 31 < 13 || 1 < 2 && 3 > 1
-5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31)
-6. true && false && false || false && true
-7. true && false || true || false
-8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
+1. true || false - true
+2. false && false - false
+3. 1 < 2 && 2 > 1 - true
+4. 31 < 13 || 1 < 2 && 3 > 1 - true
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) - true
+6. true && false && false || false && true - false
+7. true && false || true || false - true
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 - true
 ```
 
 ---
@@ -27,9 +27,9 @@ Given this data structure:
 let data = [0, [], [], [1, 2, 3, [4]]];
 ```
 
-1. How would you access the value `0`?
-2. How would you access the value `3`?
-3. How would you access the value `4`?
+1. How would you access the value `0`? data[0]
+2. How would you access the value `3`? data[3][2]
+3. How would you access the value `4`? data[3][3][0]
 
 ---
 
@@ -40,8 +40,15 @@ let data = [0, [], [], [1, 2, 3, [4]]];
 - For each property value, indicate its type.
 
 ```js
-{ label: 'corn', price: 5.3 + '$' };
+{ label: 'corn', price: 5.3 + '$' }; 
+Properties: 2
+1. label: corn (string)
+2. price: 5.3$ (string)
 { ISBN: 53532, isAvailable: true, author: 'Nakamoto' };
+Properties: 3
+1. ISBN: 53532 (number)
+2. isAvailable: true (boolean)
+3. author: Nakamoto (string)
 ```
 
 ---
@@ -56,9 +63,9 @@ let name = 'John';
 
 What is the value of the following expressions?
 
-1. person.name
-2. person['name']
-3. person[name]
+1. person.name - Bob
+2. person['name'] - Bob
+3. person[name] - undefined
 
 ---
 
@@ -72,6 +79,6 @@ let key = 'name';
 
 What is the value of the following expressions:
 
-1. person.key
-2. person['key']
-3. person[key]
+1. person.key - undefined
+2. person['key'] - undefined
+3. person[key] - Bob
