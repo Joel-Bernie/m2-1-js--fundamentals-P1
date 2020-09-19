@@ -13,6 +13,11 @@ function exercise10() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let hash=''
+  for(i = 0; i <= 6; i++) {
+    hash = `${hash}#`;
+    console.log(hash);
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
