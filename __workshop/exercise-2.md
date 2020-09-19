@@ -88,8 +88,8 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 ```
 2. let currentNum = 10;
 4. let min = 5;
-5. currentNum = currentNum - 1;
 1.   while (currentNum > min) {
+5.      currentNum = currentNum - 1;
 3.      console.log(currentNum);
 6.     }
 
@@ -128,10 +128,10 @@ _THIS IS SUPER IMPORTANT_, otherwise Prettier might destroy your solution:
 
 ```
 6. let count = 10;
+3. let total = 0;
 2. while (count > 0) {
-3.   let total = 0;
-1.   total = total + count;
 4.   count = count - 1;
+1.   total = total + count;
 7.  }
 5. console.log('The total is:', total)
 
