@@ -7,7 +7,7 @@ function exercise7() {
   //
   // These are the hours alloted to each activity.
   // - Sleep between 22h and 5h
-  // - Eat at 6h, 13h and 18h
+  // - Eat at 6h, 12h and 18h
   // - The rest of the time is spent training.
   //
   // Expected Output
@@ -23,6 +23,17 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for(t = 0; t <= 23; t++) {
+    if(t <= 5) {
+      console.log(`It's ${t}h. Time to sleep!`);
+    } else if(t >= 22) {
+      console.log(`It's ${t}h. Time to sleep!`);
+    } else if(t === 6 || t === 12 || t === 18) {
+      console.log(`It's ${t}h. Time to eat!`);
+    } else {
+      console.log(`It's ${t}h. Time to train!`);
+    }
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
