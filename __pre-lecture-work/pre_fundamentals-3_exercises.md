@@ -7,14 +7,14 @@ _We will correct these exercises in class._
 ```js
 // Look at these expressions below and determine whether they evaluate to true or false
 
-1. true || false - true
-2. false && false - false
-3. 1 < 2 && 2 > 1 - true
-4. 31 < 13 || 1 < 2 && 3 > 1 - true
-5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) - true
-6. true && false && false || false && true - false
-7. true && false || true || false - true
-8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 - true
+1. true || false // true
+2. false && false // false
+3. 1 < 2 && 2 > 1 // true
+4. 31 < 13 || 1 < 2 && 3 > 1 // true
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) // true
+6. true && false && false || false && true // false
+7. true && false || true || false // true
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 // true
 ```
 
 ---
@@ -63,9 +63,9 @@ let name = 'John';
 
 What is the value of the following expressions?
 
-1. person.name - Bob
-2. person['name'] - Bob
-3. person[name] - undefined
+1. person.name // Bob
+2. person['name'] // Bob
+3. person[name] // undefined
 
 ---
 
@@ -79,6 +79,6 @@ let key = 'name';
 
 What is the value of the following expressions:
 
-1. person.key - undefined
-2. person['key'] - undefined
-3. person[key] - Bob
+1. person.key // undefined
+2. person['key'] // undefined
+3. person[key] // Bob
